@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/redis
+    username: test
+    password: test
+    validation-query: SELECT 1
+    test-on-borrow: true
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update  #update, validate, create, none    
+      naming-strategy: org.hibernate.cfg.EJB3NamingStrategy
+  redis:
+    host: localhost
+    port: 6379
